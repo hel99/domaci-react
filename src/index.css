@@ -19,3 +19,15 @@ body {
 .h1-n{
   font-size: 50px;
 }
+
+#input-iznos{
+  margin-left: 30px;
+  font-size: 22px;
+  width: 200px;
+}
+
+#prihod-trosak-select{
+  width: 150px;
+  font-size: 22px;
+  margin-top: 10px;
+}

@@ -9,7 +9,7 @@ function Budzet() {
     return (
         <div>
             <h1 className="h1-n">Moj budžet</h1>
-            <h1 className="h1-n">Stanje: {stanje}</h1>
+            <h1 className="h1-n">Stanje: {stanje} RSD</h1>
 
             <Promene stanje={stanje} />
         </div>

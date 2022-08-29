@@ -1,23 +1,33 @@
 import { useState } from 'react';
 
-function Promene() {
+function Promene(props) {
 
     const [tipTransakcije, setTipTransakcije] = useState('');
+    const [iznos, setIznos] = useState();
 
     function handleSelect(e) {
         setTipTransakcije(e.target.value)
     }
 
-    console.log(tipTransakcije);
+    function handleIznos(e) {
+        setIznos(parseInt(e.target.value));
+    }
+
+
 
     return (
         <div>
             <select id="prihod-trosak-select" onChange={handleSelect} value={tipTransakcije}>
+                <option>Izaberi tip</option>
                 <option value="prihod">Prihod</option>
                 <option value="trosak">Trošak</option>
             </select>
 
-            <input type="text" id="input-iznos" />
+            <input type="number" id="input-iznos" onChange={handleIznos} value={iznos} />
+
+            <div>
+                <button id='btn-unesi' onClick={() => props.promeniStanje(tipTransakcije, iznos)}>Unesi</button>
+            </div>
         </div>
     )
 }

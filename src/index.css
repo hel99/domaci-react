@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
+body {
+  background-color: #adceff;
+}
+
 .h1-n{
   font-size: 50px;
 }

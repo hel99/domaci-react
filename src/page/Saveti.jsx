@@ -1,4 +1,5 @@
 import ListaSaveta from "../component/ListaSaveta";
+import Navbar from "../component/Navbar";
 
 function Saveti() {
 
@@ -6,6 +7,7 @@ function Saveti() {
 
     return (
         <div>
+            <Navbar />
             <h1 className="h1-n">Upravljanje budžetom</h1>
             <ListaSaveta slika={slika} />
         </div>

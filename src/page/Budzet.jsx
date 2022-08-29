@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Navbar from '../component/Navbar';
 import Promene from '../component/Promene';
 
 function Budzet() {
@@ -19,6 +20,7 @@ function Budzet() {
 
     return (
         <div>
+            <Navbar />
             <h1 className="h1-n">Moj budžet</h1>
             <h1 className="h1-n">Stanje: {stanje} RSD</h1>
 

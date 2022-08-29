@@ -77,3 +77,28 @@ body {
     justify-content: center;
     margin-top: 100px;
 }
+
+.navbar {
+  background-color: black;
+}
+
+.nav-element a{
+  text-decoration: none;
+}
+
+.nav-element a:visited{
+  color: white;
+}
+
+.nav-element{
+  font-size: 30px;
+  color: white;
+}
+
+#nav-saveti {
+  margin-right: 1700px;
+}
+
+#nav-home {
+  margin-left: 30px;
+}

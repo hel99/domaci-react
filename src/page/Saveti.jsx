@@ -7,7 +7,6 @@ function Saveti() {
     return (
         <div>
             <h1 className="h1-n">Upravljanje budžetom</h1>
-
             <ListaSaveta slika={slika} />
         </div>
     )
